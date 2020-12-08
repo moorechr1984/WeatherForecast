@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Verify.Blazor" Version="6.4.0" />
+    <PackageReference Include="Verify.Bunit" Version="6.4.0" />
+  </ItemGroup>
+
+</Project>
