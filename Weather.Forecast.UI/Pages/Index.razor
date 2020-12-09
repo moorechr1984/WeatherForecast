@@ -3,5 +3,22 @@
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
-
+<button class="btn btn-primary" id="btnTodaysForecast" @onclick="OnClickMe">Click Me</button>
+<button class="btn btn-primary" id="btnTodaysForecastCleared" @onclick="OnClearMe">Clear Me</button>
+<div id="divResult">@itWorked</div>
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+
+@code
+{
+    string itWorked = string.Empty;
+    public void OnClickMe()
+    {
+        itWorked = "It Worked";
+    }
+
+    public void OnClearMe()
+    {
+        itWorked = string.Empty;
+    }
+}
